@@ -14,7 +14,7 @@ function Dog(name){
 };
 
 Dog.prototype = Object.create(Animal.prototype);
-
+Dog.prototype.constructor = Dog;
 var dog = new Dog ('Aban');
 
 
